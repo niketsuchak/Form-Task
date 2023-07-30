@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Internship-Task</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <!-- partial:index.partial.html -->
+  <form id="registrationForm" class="form" autocomplete="off">
+    <div class="form-inner">
+      <h1>Registration form</h1>
+      <div class="panel-body" method="post">
+        <div class="form-group">
+          <label for="firstname">First Name</label>
+          <input type="text" class="form-control" id="firstname" name="firstname">
+        </div>
+        <div class="form-group">
+          <label for="lastname">Last Name</label>
+          <input type="text" class="form-control" id="lastname" name="lastname">
+        </div>
+        <div class="form-group">
+          <label for="gender">Gender</label>
+          <label for="male">Male</label>
+          <input type="radio" name="gender" value="m" id="male">
+          <label for="female">Female</label>
+          <input type="radio" name="gender" value="f" id="female">
+          <label for="other">Other</label>
+          <input type="radio" name="gender" value="o" id="other">
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="text" class="form-control" id="email" name="email">
+        </div>
+        <div class="form-group">
+          <label for="number">Phone Number</label>
+          <input type="text" class="form-control" id="number" name="number">
+        </div>
+        <div class="form-group">
+          <label for="Date">Date of Birth</label>
+          <input type="date" class="form-control" id="dateOfBirth" name="dateOfBirth">
+        </div>
+        <div class="form-group">
+          <label for="image">Image</label>
+          <input type="file" accept="image/png, image/jpeg, image/jpg" class="form-control" id="image" name="image">
+        </div>
+        <div class="form-group">
+          <label for="professional skills">Professional Skills</label>
+          <br>
+          <input type="checkbox" class="form-control" id="communication" name="communication">
+          <label for="communication">Communication</label>
+          <input type="checkbox" class="form-control" id="criticalThinking" name="criticalThinking">
+          <label for="criticalThinking">Critical Thinking</label>
+          <input type="checkbox" class="form-control" id="problemSolving" name="problemSolving">
+          <label for="problemSolving">Problem Solving</label>
+          <input type="checkbox" class="form-control" id="initiative" name="initiative">
+          <label for="initiative">Initiative</label>
+        </div>
+      </div>
+
+      <div class="btn-group">
+        <button class="btn btn--primary" onclick= registerUser()>Sign in</button>
+        <a class="btn--text" href="#0">Forgot password?</a>
+      </div>
+    </div>
+  </form>
+  <!-- partial -->
+  <script src="app.js"></script>
+</body>
+</html>
